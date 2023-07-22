@@ -15,9 +15,9 @@ const ThemeProvider = function({children}) {
 
     // return will publish to it's subscribers
     return (
-        <ThemeProvider.Provider value={{theme, toggleTheme}}>
+        <ThemeContext.Provider value={{theme, toggleTheme}}>
             {children}
-        </ThemeProvider.Provider>
+        </ThemeContext.Provider>
     )
 
     // will consumed as  `const {theme, toggleTheme} = useContext(ThemeContext);`
