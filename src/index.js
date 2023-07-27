@@ -5,17 +5,19 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 import { ThemeProvider } from './ThemeContext';
+import ListRendering from './ListRendering';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 //  <React.StrictMode>
+<>  // it means the elements listed below are treated as sibling and inside root element without the need for an additional parent container.
+    <ListRendering/>
     <ThemeProvider>
         <App/>
     </ThemeProvider>
+</>
+
 //  </React.StrictMode>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
