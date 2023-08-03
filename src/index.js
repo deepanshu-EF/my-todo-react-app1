@@ -5,19 +5,20 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 import { ThemeProvider } from './ThemeContext';
-import ListRendering from './ListRendering';
+//import ListRendering from './ListRendering';
+//import AddTasks from './AddTasks';
+import ParentComponent from './ParentComponent';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-//  <React.StrictMode>
 <>  // it means the elements listed below are treated as sibling and inside root element without the need for an additional parent container.
-    <ListRendering/>
+
     <ThemeProvider>
         <App/>
     </ThemeProvider>
+    <ParentComponent/>
 </>
 
-//  </React.StrictMode>
 );
 
 reportWebVitals();
